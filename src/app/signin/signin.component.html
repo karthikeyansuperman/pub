@@ -1,0 +1,11 @@
+<form (ngSubmit)="onAuthSubmit()" #authForm="ngForm">
+    <label>Email:</label>
+    <input type="email" name="email" [(ngModel)]="email" required>
+  
+    <label>Password:</label>
+    <input type="password" name="password" [(ngModel)]="password" required>
+  
+    <button type="submit">{{ isSignUp ? 'Sign Up' : 'Sign In' }}</button>
+  </form>
+  
+  <p>{{ isSignUp ? 'Already have an account?' : 'Don\'t have an account?' }} <a (click)="toggleAuthMode()">{{ isSignUp ? 'Sign In' : 'Sign Up' }}</a></p>

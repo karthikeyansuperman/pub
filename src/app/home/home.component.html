@@ -1,0 +1,5 @@
+<p class="kklisuser" *ngFor="let user of users">
+    {{ user.displayName || user.email }}
+    <button class="btn" (click)="sendFriendRequest(user)">Send Request</button>
+    <button class="btn" (click)="acceptFriendRequest(user.uid)">Accept</button>
+  </p>

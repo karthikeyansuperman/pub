@@ -1,0 +1,57 @@
+<div *ngIf="user">
+    <h2>Welcome, {{ user.displayName || user.email }}!</h2>
+    <div class="container">
+      <div class="row kkmgsbxrw">
+        <div class="col-3">
+          <mat-card class="kkitem1">
+            <mat-card-header>
+              <div class="kkinbxtg1">
+                <p class="kkusertg1">Messages</p><span class="material-symbols-outlined">more_vert </span>
+              </div>
+            </mat-card-header>
+            <mat-card-content>
+              <p class="kklisuser" *ngFor="let user of users" (click)="onChatTargetClick(user)">
+                {{ user.displayName || user.email }}
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+  
+        <!-- Display messages related to the selected user -->
+        <div class="col-6 kkmsgcont2 " *ngIf="chatTarget">
+          <mat-card class="kkitem2">
+            <mat-card-header class="kkinbx21">
+              <h3>{{ chatTarget.displayName || chatTarget.email }}</h3>
+            </mat-card-header>
+            <mat-card-content class="kkinbx22">
+              <!-- <div *ngFor="let message of messages">
+                <span *ngIf="message.senderId === user.uid">{{ user.displayName }}: </span>
+                <span *ngIf="message.senderId !== user.uid">{{ chatTarget.displayName || chatTarget.email }}: </span>
+                {{ message.content }}
+              </div> -->
+              <div   *ngFor="let message of messages" [ngClass]="{'sender-message': message.senderId === user.uid, 'receiver-message': message.senderId !== user.uid}">
+                <span *ngIf="message.senderId === user.uid">{{ user.displayName }}: </span>
+                <span *ngIf="message.senderId !== user.uid">{{ chatTarget.displayName || chatTarget.email }}: </span>
+                {{ message.content }}
+              </div>
+              
+            </mat-card-content>
+            <mat-card-footer class="kkinbx23">
+              <div class="typing-box kkmsgsent" *ngIf="chatTarget">
+              
+                <input [(ngModel)]="newMessage" placeholder="Type your message..." />
+                <button (click)="onSendMessageClick()">Send</button>
+               
+              </div>
+            </mat-card-footer>
+          </mat-card>
+        </div>
+        <div class="col-3 ">
+          <div class="kkmsgcont3 kkitem3">
+            <button class="btn kksignot" (click)="onSignOutClick()"><span
+                class="material-symbols-outlined">power_settings_new</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    

@@ -1,0 +1,159 @@
+.kkusertg1 {
+    color: #171C1B;
+    font-family: League Spartan;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.kkinbxtg1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.kklisuser {
+    background-color: rgba(236, 150, 236, 0.5);
+    max-width: 342px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.7rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.kkmgsbxrw {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+
+.kkitem1 {
+    background-color: rgba(255, 255, 255, 0.5); 
+    height: 630px;
+    padding: 0.8rem;
+    margin-bottom: 2.2rem;   
+    border-radius: 1.7rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+    
+
+}
+
+
+.kkitem2 {
+    border: 1px solid #E0E0E0;
+
+    background: #F2F2F2;
+    height: 700px;
+    padding: 1.8rem;
+    margin-bottom: 2.2rem;
+   border-radius: 1.7rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+    backdrop-filter: blur(1.5rem);
+    position: relative;
+}
+
+.kkitem3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 630px;
+       margin-bottom: 2.2rem;
+    border-radius: 1.7rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+
+}
+
+.kksignot{
+       padding: 12px 20px;
+          color: #FFF;
+    border-radius: 52px;
+    background: #A426D1;
+    margin-top: 280px;
+    margin-left: 119px;
+}
+
+.kkinbx21{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #E3E8E7;
+    background: #FFF;
+    height: 80px;
+    width: 100%;
+       border-top-right-radius:1.7rem;
+    border-top-left-radius:1.7rem;
+}
+.kkinbx22{
+    position: inherit;
+    top: 100px;
+    border-radius: 20px;
+
+   
+   
+}
+.kkinbx23{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #E3E8E7;
+    background: #FFF;
+    height: 132px;
+    width: 100%;
+   
+    border-radius: 1.7rem;
+}
+
+.typing-box {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  textarea {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c91dcf;
+  }
+
+.kkmsgsent{
+       display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.sender-message {
+    text-align: right;
+   background-color:#A426D1;
+   color: #FFF;
+   padding: 12px;
+   border-radius: 20px; 
+margin-bottom: 16px;
+     }
+  
+  .receiver-message {
+    text-align: left;
+background-color: #FFF;
+color: black;
+padding: 12px;
+border-radius: 20px;
+margin-bottom: 16px;
+  }
